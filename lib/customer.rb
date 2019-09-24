@@ -5,3 +5,4 @@ class Customer
     @age
   end
   
+end
