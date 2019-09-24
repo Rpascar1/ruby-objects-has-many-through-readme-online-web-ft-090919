@@ -7,4 +7,9 @@ class Customer
     @age
   end
   
+  def self.all
+    @all
+  end
+  
+  
 end
