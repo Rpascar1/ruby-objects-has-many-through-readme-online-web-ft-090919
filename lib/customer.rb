@@ -1,6 +1,6 @@
 class Customer
   
-  @@all 
+  @@all = [] 
   
   def initialize(name,age)
     @name
