@@ -25,9 +25,10 @@ class Waiter
   end
   
   def best_tipper
-    Meal.all.select do |max|
-      max.max
-  end
+    Meal.all.select do |meal|
+      meal.tip == max
+
+  end 
   
   
   
