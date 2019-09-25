@@ -24,7 +24,9 @@ class Waiter
     end
   end
   
-  
+  def best_tipper
+    self.max
+  end
   
   
   
