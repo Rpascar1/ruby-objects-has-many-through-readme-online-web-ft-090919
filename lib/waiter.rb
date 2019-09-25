@@ -25,8 +25,8 @@ class Waiter
   end
   
   def best_tipper
-    best_tip = meals.max{|meal| meal.tip}
-    best_tip.customer
+    best_tip = meals.max|meal1, meal2|
+
     
   end 
   
