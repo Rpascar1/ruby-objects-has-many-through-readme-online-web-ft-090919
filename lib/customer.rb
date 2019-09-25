@@ -20,11 +20,9 @@ class Customer
   end
   
   def meals
-    mealy = []
     meals_count = Hash.new 
     Meal.all.each do |customer|
-      if customer == self
-        p meals_count[customer]
+        meals_count[customer] += 1
       end
     end
   end
