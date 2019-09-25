@@ -20,8 +20,7 @@ class Customer
   end
   
   def meals
-    meals = []
-    meals << get_meals = Meal.all.find.count{|customer|customer == self}
+      Meal.all.count(self)
   end
     
     
