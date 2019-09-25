@@ -18,6 +18,7 @@ class Customer
   def new_meal(self, waiter, total, tip)
     Meal.new
   end
+  end
   
   
   #describe "Customer" do
