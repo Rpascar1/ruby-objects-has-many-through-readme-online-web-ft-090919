@@ -5,8 +5,8 @@ class Customer
   attr_accessor :name, :age, :new_meal
   
   def initialize(name,age)
-    @name
-    @age
+    @name = name
+    @age = age
     @@all << self
   end
   
