@@ -22,7 +22,6 @@ class Customer
   def meals
     meals = []
     meals << get_meals = Meal.all.find{|customer|customer == self}
-  meals.length
   end
     
     
