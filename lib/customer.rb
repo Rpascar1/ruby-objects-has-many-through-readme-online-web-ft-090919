@@ -24,8 +24,6 @@ class Customer
     meals_count = Hash.new 
     Meal.all.each do |customer|
       meals_count[customer].find(self) 
-       end
-        
     end
   end
     
