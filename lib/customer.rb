@@ -16,10 +16,16 @@ class Customer
     
   
   def new_meal(waiter,total,tip)
-      Meal.new(waiter,self, total, tip)
+      Meal.new(waiter,self, total,tip)
   end
   
-  
+  def meals
+    @@all.select{|customer|customer == self}
+  end
+    
+    
+    
+      
   #describe "Customer" do
    # describe "#new_meal" do
     #  it "initializes a meal using the current Customer instance, a provided Waiter #instance and a total and tip" do
