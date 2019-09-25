@@ -20,8 +20,8 @@ class Customer
   end
   
   def meals
-    meals = []
-    meals << get_meals = Meal.all.find{|customer|customer == self}
+    meals_count = Hash.new 0
+    Meal.all.each{|customer|meals_count[customer] +=1}
   end
     
     
