@@ -24,8 +24,7 @@ class Customer
     meals_count = Hash.new 
     Meal.all.each do |customer|
       if customer == self
-        mealy << meals_count[customer] 
-        mealy.length
+        p meals_count[customer]
       end
     end
   end
