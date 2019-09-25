@@ -20,7 +20,9 @@ class Customer
   end
   
   def meals
-    Meal.all.find{|customer|customer == self}
+    meals = []
+    meals << get_meals = Meal.all.find{|customer|customer == self}
+    meals.length
   end
     
     
