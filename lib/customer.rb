@@ -25,6 +25,7 @@ class Customer
       if customer == self
         meals_count[customer] +=1
       end
+    end
   end
     
     
