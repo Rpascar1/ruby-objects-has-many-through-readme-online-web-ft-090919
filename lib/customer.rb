@@ -20,7 +20,7 @@ class Customer
   end
   
   def meals
-          Meal.all.find{|customer|customer == self}
+      Meal.all.find{|customer|customer == self}
   end
     
     
