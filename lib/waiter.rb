@@ -26,7 +26,7 @@ class Waiter
   
   def best_tipper
     best_tip = meals.max do |meal1, meal2|
-      meal1>meal2 ? meal1 : meal2
+      meal1.tip > meal2.tip ? meal1.tip : meal2.tip
     end
     best_tip.customer
     
