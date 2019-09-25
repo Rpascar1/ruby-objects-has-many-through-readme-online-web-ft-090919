@@ -23,7 +23,7 @@ class Customer
     meals_count = Hash.new 
     Meal.all.each do |customer|
       if meals_count[customer] == self 
-         meals_count[customer] += 1
+         meals_count[customer] 
        end
         
     end
