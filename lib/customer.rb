@@ -23,7 +23,8 @@ class Customer
   array = []
     meals_count = Hash.new 
     Meal.all.each do |customer|
-      array << meals_count[customer].find(self) 
+      meals_count[customer].find(self) 
+      array << meals_count[customer]
     end
   end
     
